@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
-	@users = User.find_by_sql("SELECT * FROM users WHERE name = '#{params[:name]}'")
+	@users = User.all
   end
 
   # GET /users/1 or /users/1.json
